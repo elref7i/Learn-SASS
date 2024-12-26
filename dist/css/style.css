@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+a, span {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* h1{
+  background-color: $main-color;
+  padding: $main-padding;
+} */
+.home .container {
+  padding: 10px;
+  width: 1320px;
+  margin-inline: auto;
+}
+.home .container h1 {
+  color: blue;
+}
+.home .container ol li a {
+  color: lightcoral;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.home .container ol li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #4d6;
+  left: 5;
+  bottom: 0;
+  -webkit-transition: width 350ms;
+  transition: width 350ms;
+}
+.home .container ol li a:hover::before {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

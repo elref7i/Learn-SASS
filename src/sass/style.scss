@@ -1,0 +1,49 @@
+//* CSS preProccessing
+@import './variables';
+@import './base';
+
+
+//*[1] Variables 
+
+//*[2] Modules and Partails
+//*[3] Nesting
+
+/* h1{
+  background-color: $main-color;
+  padding: $main-padding;
+} */
+
+
+.home{
+  .container{
+    padding: $main-padding;
+    width: 1320px;
+    margin-inline: auto;
+    h1{
+      color:$second-color;
+    }
+    ol{
+      li{
+        a{
+          color: lightcoral;
+          padding: $main-padding;
+          width: fit-content;
+          position: relative;
+          &::before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: $main-color;
+            left: 5;
+            bottom: 0;
+            transition: width $transition-duration;
+          }
+          &:hover::before{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
