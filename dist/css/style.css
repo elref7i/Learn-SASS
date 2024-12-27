@@ -92,6 +92,28 @@ a {
   border-color: #ffc145;
 }
 
+.btn, .btn-danger, .btn-success {
+  padding-inline: 20px;
+  padding-block: 5px;
+  font-size: 20px;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #2e5077;
+}
+.btn-success:hover {
+  background-color: #ffc145;
+}
+
+.btn-danger {
+  background-color: #c62300;
+}
+.btn-danger:hover {
+  background-color: #ffc145;
+}
+
 /* h1{
   background-color: $main-color;
   padding: $main-padding;
@@ -111,6 +133,9 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
 }
 .home .container ol li a::before {
   content: "";

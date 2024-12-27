@@ -3,6 +3,7 @@
 @import './variables';
 @import './base';
 @import './utilities';
+@import './component';
 
 //*[1] Variables
 //*[2] Modules and Partails
@@ -26,6 +27,11 @@
           padding: $main-padding;
           width: fit-content;
           position: relative;
+          font: {
+            size: 30px;
+            weight: bold;
+            style: italic;
+          }
           &::before {
             content: '';
             position: absolute;
