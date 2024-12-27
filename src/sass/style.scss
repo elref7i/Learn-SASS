@@ -8,10 +8,28 @@
 //*[1] Variables
 //*[2] Modules and Partails
 //*[3] Nesting
+//*[4]loop
+//*[5]inheritance @extend
+//*[6]mixin @include , function ,contions using @if
+//*[7] mixin VS function
+
 /* h1{
   background-color: $main-color;
   padding: $main-padding;
 } */
+
+@mixin Avater($w, $h, $bg, $circle: false) {
+  width: $w;
+  height: $h;
+  background-color: $bg;
+  @if $circle {
+    border-radius: 50%;
+  } @else if $circle == 'refai' {
+    border-radius: 25%;
+  } @else {
+    border-radius: 10%;
+  }
+}
 .home {
   .container {
     padding: $main-padding;
@@ -48,5 +66,16 @@
         }
       }
     }
+  }
+}
+.about {
+  margin-block: 20px;
+  padding: 40px;
+  background-color: aqua;
+  .avater {
+    @include Avater(40px, 40px, red, false);
+  }
+  .avaterTwo {
+    @include Avater(70px, 70px, blue, false);
   }
 }

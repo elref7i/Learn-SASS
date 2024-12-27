@@ -150,4 +150,22 @@ a {
 }
 .home .container ol li a:hover::before {
   width: 100%;
+}
+
+.about {
+  margin-block: 20px;
+  padding: 40px;
+  background-color: aqua;
+}
+.about .avater {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 10%;
+}
+.about .avaterTwo {
+  width: 70px;
+  height: 70px;
+  background-color: blue;
+  border-radius: 10%;
 }/*# sourceMappingURL=style.css.map */
