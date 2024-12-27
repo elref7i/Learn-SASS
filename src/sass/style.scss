@@ -1,36 +1,33 @@
 //* CSS preProccessing
+@use 'sass:map';
 @import './variables';
 @import './base';
+@import './utilities';
 
-
-//*[1] Variables 
-
+//*[1] Variables
 //*[2] Modules and Partails
 //*[3] Nesting
-
 /* h1{
   background-color: $main-color;
   padding: $main-padding;
 } */
-
-
-.home{
-  .container{
+.home {
+  .container {
     padding: $main-padding;
     width: 1320px;
     margin-inline: auto;
-    h1{
-      color:$second-color;
+    h1 {
+      color: $second-color;
     }
-    ol{
-      li{
-        a{
-          color: lightcoral;
+    ol {
+      li {
+        a {
+          color: map.get($colors, 'info');
           padding: $main-padding;
           width: fit-content;
           position: relative;
-          &::before{
-            content: "";
+          &::before {
+            content: '';
             position: absolute;
             width: 0%;
             height: 2px;
@@ -39,7 +36,7 @@
             bottom: 0;
             transition: width $transition-duration;
           }
-          &:hover::before{
+          &:hover::before {
             width: 100%;
           }
         }

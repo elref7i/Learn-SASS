@@ -1,5 +1,24 @@
+$main-color: #4d6;
+$second-color: blue;
+$main-padding: 10px;
+$transition-duration: 350ms;
 
-$main-color:#4d6;
-$second-color:blue;
-$main-padding:10px;
-$transition-duration:350ms;
+//* to => end => not include
+
+$colors: (
+  'primary': #2e5077,
+  'warining': #c62300,
+  'info': #ffc145,
+);
+
+@for $i from 1 to 5 {
+  .p-#{$i} {
+    padding: #{$i}rem;
+  }
+}
+
+@for $j from 0 through 5 {
+  .m-#{$j} {
+    margin: #{$j}rem;
+  }
+}
